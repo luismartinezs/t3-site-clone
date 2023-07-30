@@ -5,7 +5,7 @@ import { T3Logo } from "~/components/T3Logo";
 
 export function Header() {
   return (
-    <header className="container absolute flex items-center gap-4 bg-transparent px-4 py-4 pb-20">
+    <header className="container flex items-center gap-4 bg-transparent px-4 py-4">
       <div className="w-14">
         <T3Logo />
       </div>

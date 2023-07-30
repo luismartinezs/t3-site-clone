@@ -1,5 +1,8 @@
 import Head from "next/head";
+import { AboutSection } from "~/components/AboutSection";
 import { Header } from "~/components/Header";
+import { HeroSection } from "~/components/HeroSection";
+import { StackSection } from "~/components/StackSection";
 
 export default function Home() {
   return (
@@ -10,7 +13,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="min-h-screen bg-gradient-to-b from-[#111828] to-[#482C77]"></main>
+      <main className="container mx-auto px-6 pb-20">
+        <HeroSection />
+        <AboutSection />
+        <StackSection />
+      </main>
     </>
   );
 }
