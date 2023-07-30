@@ -56,33 +56,40 @@ const ConsoleCode = () => {
 
 export function AboutSection() {
   return (
-    <section id="about" className="prose-invert my-10 lg:prose-xl">
-      <h2 className="text-3xl font-bold">Typesafe From The Start</h2>
-      <Paragraph className="mt-8">
-        We made create-t3-app to do one thing: Streamline the setup of typesafe
-        Next.js apps WITHOUT compromising modularity.
-      </Paragraph>
-      <Paragraph className="mt-6">
-        After countless projects and many years on this tech, we have lots of
-        opinions and insights. We&apos;ve done our best to encode them into this
-        CLI.
-      </Paragraph>
-      <Paragraph className="mt-6">
-        This is NOT an all-inclusive template.{" "}
-        <strong className="text-primary-300">
-          We expect you to bring your own libraries.
-        </strong>{" "}
-        Check out{" "}
-        <Link
-          href="https://create.t3.gg/en/other-recs"
-          className="text-blue-500 no-underline hover:underline"
-        >
-          our other recommendations
-        </Link>{" "}
-        for things like state management and deployment.
-      </Paragraph>
-      <div className="mt-8">
-        <Console>
+    <section
+      id="about"
+      className="prose-invert mx-auto my-10 flex max-w-3xl flex-col gap-6 lg:prose-xl xl:max-w-7xl xl:flex-row"
+    >
+      <div>
+        <h2 className="text-3xl font-bold md:text-5xl xl:mt-0">
+          Typesafe From The Start
+        </h2>
+        <Paragraph className="mt-8">
+          We made create-t3-app to do one thing: Streamline the setup of
+          typesafe Next.js apps WITHOUT compromising modularity.
+        </Paragraph>
+        <Paragraph className="mt-6">
+          After countless projects and many years on this tech, we have lots of
+          opinions and insights. We&apos;ve done our best to encode them into
+          this CLI.
+        </Paragraph>
+        <Paragraph className="mt-6">
+          This is NOT an all-inclusive template.{" "}
+          <strong className="text-primary-300">
+            We expect you to bring your own libraries.
+          </strong>{" "}
+          Check out{" "}
+          <Link
+            href="https://create.t3.gg/en/other-recs"
+            className="text-blue-500 no-underline hover:underline"
+          >
+            our other recommendations
+          </Link>{" "}
+          for things like state management and deployment.
+        </Paragraph>
+      </div>
+      <div className="mx-auto mt-8 max-w-[600px] xl:mt-0">
+        <Console className="xl:mb-24">
           <ConsoleCode />
         </Console>
       </div>

@@ -5,12 +5,16 @@ import { FiCopy } from "react-icons/fi";
 
 export function HeroSection() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-12 md:gap-5">
+    <section className="flex flex-col items-center justify-center gap-4 py-12 md:gap-5 xl:mb-32">
       <h1 className="text-center text-4xl font-bold md:text-6xl xl:text-8xl">
-        The best way to start a{" "}
-        <span className="text-[#33BBFF]">full-stack,</span>{" "}
-        <span className="text-[#6666FF]">typesafe</span>{" "}
-        <span className="text-[#BB33FF]">Next.js</span> app
+        <span className="whitespace-nowrap">The best way to start a</span>
+        <br />
+        <span className="whitespace-nowrap">
+          <span className="text-[#33BBFF]">full-stack,</span>{" "}
+          <span className="text-[#6666FF]">typesafe</span>{" "}
+        </span>
+        <br />
+        <span className="whitespace-nowrap text-[#BB33FF]">Next.js</span> app
       </h1>
       <div className="flex gap-4 text-sm md:text-base">
         <Link
