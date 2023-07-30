@@ -5,7 +5,7 @@ export function Paragraph(props: React.ComponentPropsWithoutRef<"p">) {
   return (
     <p
       className={classnames(
-        "prose-invert text-primary-300 lg:prose-xl",
+        "prose prose-invert text-primary-300 lg:prose-xl",
         className
       )}
       {...otherProps}

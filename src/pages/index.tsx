@@ -1,5 +1,7 @@
 import Head from "next/head";
 import { AboutSection } from "~/components/AboutSection";
+import { CommunitySection } from "~/components/CommunitySection";
+import { Footer } from "~/components/Footer";
 import { Header } from "~/components/Header";
 import { HeroSection } from "~/components/HeroSection";
 import { StackSection } from "~/components/StackSection";
@@ -13,11 +15,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="container mx-auto px-6 pb-20">
+      <main className="container mx-auto px-4">
         <HeroSection />
         <AboutSection />
         <StackSection />
+        <CommunitySection />
       </main>
+      <Footer />
     </>
   );
 }
