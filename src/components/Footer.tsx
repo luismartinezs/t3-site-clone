@@ -3,7 +3,7 @@ import { IoLogoVercel } from "react-icons/io5";
 
 export function Footer() {
   return (
-    <footer className="container flex items-center justify-center gap-4 bg-transparent px-4 py-14">
+    <footer className="container mx-auto flex items-center justify-center gap-4 bg-transparent px-4 py-14">
       <Link
         className="flex flex-row bg-black"
         href="https://vercel.com/?utm_source=t3-oss&utm_campaign=oss"

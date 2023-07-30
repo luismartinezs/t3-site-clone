@@ -5,7 +5,7 @@ import { FiCopy } from "react-icons/fi";
 
 export function HeroSection() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-12 md:gap-5 xl:mb-32">
+    <section className="flex flex-col items-center justify-center gap-4 py-12 md:gap-5 xl:mb-32 xl:mt-16">
       <h1 className="text-center text-4xl font-bold md:text-6xl xl:text-8xl">
         <span className="whitespace-nowrap">The best way to start a</span>
         <br />

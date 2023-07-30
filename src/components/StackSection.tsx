@@ -58,7 +58,7 @@ export function StackSection() {
           Take what you want and nothing more!
         </Paragraph>
       </div>
-      <ul className="mt-8 grid grid-cols-1 place-items-stretch items-stretch gap-10 text-left md:grid-cols-2 md:gap-x-6 lg:grid-cols-3">
+      <ul className="mt-8 grid grid-cols-1 place-items-stretch gap-10 text-left md:grid-cols-2 md:gap-x-6 lg:grid-cols-3">
         {stack.map((item) => (
           <li key={item.href} className="h-full">
             <StackCard {...item} />

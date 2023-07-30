@@ -31,15 +31,17 @@ const communityCards: ICommnunityCard[] = [
 
 export function CommunitySection() {
   return (
-    <section id="community" className="py-10">
-      <h2 className="text-3xl font-bold">Community</h2>
-      <Paragraph className="mt-6">
-        Join our community to get help, share your projects, and even contribute
-        to the project!
-      </Paragraph>
-      <ul className="mt-10 flex flex-col gap-4">
+    <section id="community" className="mx-auto max-w-7xl py-10 md:text-center">
+      <h2 className="text-3xl font-bold md:text-5xl">Community</h2>
+      <div className="flex md:justify-center">
+        <Paragraph className="mt-6 md:text-xl">
+          Join our community to get help, share your projects, and even
+          contribute to the project!
+        </Paragraph>
+      </div>
+      <ul className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-stretch">
         {communityCards.map((card) => (
-          <li key={card.href}>
+          <li key={card.href} className="flex-1">
             <CommnunityCard {...card} />
           </li>
         ))}
