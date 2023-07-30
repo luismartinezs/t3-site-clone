@@ -8,7 +8,7 @@ import { T3Logo } from "~/components/T3Logo";
 
 export function Header() {
   return (
-    <header className="mx-auto flex max-w-5xl items-center gap-4 bg-transparent px-4 py-4">
+    <header className="mx-auto flex max-w-6xl items-center gap-4 bg-transparent px-4 py-4">
       <Link className="w-12" href="/">
         <T3Logo />
       </Link>

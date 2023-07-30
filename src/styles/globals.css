@@ -4,7 +4,7 @@
 
 /* TODO handle bg pattern */
 body {
-  @apply min-h-screen bg-gradient-to-b from-gray-900 via-[#300171] to-slate-900 text-primary-100 before:pointer-events-none before:absolute before:inset-0 before:block before:h-full before:w-full before:bg-[url('/public/background-pattern.svg')] before:bg-cover before:bg-no-repeat before:opacity-5;
+  @apply min-h-screen bg-gradient-to-b from-gray-900 via-[#300171] to-slate-900 text-primary-100;
 }
 
 /* Scrollbar */
