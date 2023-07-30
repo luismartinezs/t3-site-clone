@@ -5,17 +5,17 @@ import { FiCopy } from "react-icons/fi";
 
 export function HeroSection() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-12">
-      <h1 className="text-center text-4xl font-bold">
+    <section className="flex flex-col items-center justify-center gap-4 py-12 md:gap-5">
+      <h1 className="text-center text-4xl font-bold md:text-6xl xl:text-8xl">
         The best way to start a{" "}
         <span className="text-[#33BBFF]">full-stack,</span>{" "}
         <span className="text-[#6666FF]">typesafe</span>{" "}
         <span className="text-[#BB33FF]">Next.js</span> app
       </h1>
-      <div className="flex gap-4">
+      <div className="flex gap-4 text-sm md:text-base">
         <Link
           href="#"
-          className="flex items-center gap-1 rounded-full bg-primary-200 py-1 pl-3 pr-1 text-sm font-semibold text-primary-900 hover:bg-primary-200"
+          className="flex items-center gap-1 rounded-full bg-primary-200 py-1 pl-3 pr-1 font-semibold text-primary-900 hover:bg-primary-200"
         >
           Documentation
           <MdOutlineKeyboardArrowRight size={23} />
@@ -23,13 +23,13 @@ export function HeroSection() {
         <Link
           href="https://github.com/t3-oss/create-t3-app"
           target="_blank"
-          className="flex items-center gap-1 rounded-full bg-primary-100/10 px-4 py-2 text-sm font-semibold hover:bg-primary-50/30"
+          className="flex items-center gap-1 rounded-full bg-primary-100/10 px-4 py-2  font-semibold hover:bg-primary-50/30"
         >
           GitHub
           <BiLinkExternal size={15} />
         </Link>
       </div>
-      <div className="flex cursor-pointer items-center gap-2 rounded-lg border border-primary-100/30 bg-primary-100/10 px-3 py-2 text-sm hover:bg-primary-100/20">
+      <div className="flex cursor-pointer items-center gap-2 rounded-lg border border-primary-100/30 bg-primary-200/10 px-3 py-2 text-sm hover:bg-primary-200/20 md:px-4 md:py-4 md:text-base xl:text-xl">
         <pre>npm create t3-app@latest</pre>
         <FiCopy size={24} />
       </div>
