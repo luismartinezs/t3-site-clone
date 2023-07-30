@@ -44,21 +44,23 @@ const stack: StackItem[] = [
 
 export function StackSection() {
   return (
-    <section id="stack" className="my-20">
+    <section id="stack" className="mx-auto my-20 max-w-7xl md:text-center">
       <h2>
-        <div className="text-xl font-semibold text-primary-300">
+        <div className="text-xl font-semibold text-primary-300 md:text-2xl">
           The best of the full stack TypeScript ecosystem...
         </div>
-        <div className="mt-4 text-3xl font-bold">
+        <div className="mt-4 text-3xl font-bold md:text-5xl">
           ...but ONLY the parts you need
         </div>
       </h2>
-      <Paragraph className="mt-4">
-        Take what you want and nothing more!
-      </Paragraph>
-      <ul className="mt-8 flex flex-col gap-10">
+      <div className="flex w-full justify-start text-center md:justify-center">
+        <Paragraph className="mr-0 mt-4 text-lg">
+          Take what you want and nothing more!
+        </Paragraph>
+      </div>
+      <ul className="mt-8 grid grid-cols-1 place-items-stretch items-stretch gap-10 text-left md:grid-cols-2 md:gap-x-6 lg:grid-cols-3">
         {stack.map((item) => (
-          <li key={item.href}>
+          <li key={item.href} className="h-full">
             <StackCard {...item} />
           </li>
         ))}

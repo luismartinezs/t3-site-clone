@@ -20,7 +20,7 @@ export function StackCard(props: StackItem) {
 
   return (
     <div
-      className="group cursor-pointer overflow-hidden rounded-md border border-primary-100/30 hover:border-primary-100/50"
+      className="group flex h-full cursor-pointer flex-col overflow-hidden rounded-md border border-primary-100/30 hover:border-primary-100/50"
       onClick={() => handleNavigate()}
     >
       <div className="flex items-center gap-4 bg-primary-100/20 px-6 py-3 group-hover:bg-primary-100/30">
@@ -42,8 +42,8 @@ export function StackCard(props: StackItem) {
           {props.title}
         </Link>
       </div>
-      <div className="p-6">
-        <Paragraph className="text-sm text-primary-100">
+      <div className="grow bg-primary-300/10 p-6">
+        <Paragraph className="text-sm text-primary-50/90 lg:text-base">
           {props.description}
         </Paragraph>
       </div>
