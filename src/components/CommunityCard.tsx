@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Paragraph } from "~/components/Paragraph";
 
 export interface ICommnunityCard {
@@ -9,7 +10,7 @@ export interface ICommnunityCard {
 
 export function CommnunityCard(props: ICommnunityCard) {
   return (
-    <a
+    <Link
       className="group block flex cursor-pointer flex-col items-center gap-4 overflow-hidden rounded-md border border-primary-100/30 bg-primary-300/10 p-5 text-center hover:border-primary-100/50 hover:bg-primary-300/20"
       href={props.href}
       aria-label={props.title}
@@ -19,6 +20,6 @@ export function CommnunityCard(props: ICommnunityCard) {
       <Paragraph className="text-center leading-none">
         {props.description}
       </Paragraph>
-    </a>
+    </Link>
   );
 }
